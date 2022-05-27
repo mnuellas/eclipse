@@ -1,0 +1,4 @@
+install node
+run "npm i" in your cmd
+run "node app.js" in your cmd
+open two browser and play on /home

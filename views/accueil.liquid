@@ -1,0 +1,16 @@
+<html>
+{% render 'header.liquid' %}
+<link rel="stylesheet" href="/css/accueil.css">
+</head>
+<body>
+<main>
+    <form method="GET" action="/wait">
+    <div class="mb-3">
+        <label for="pseudoInput" class="form-label">Nom de la salle</label>
+        <input name="room" type="text" class="form-control" id="pseudoInput" aria-describedby="pseudoInputHelp">
+    </div>
+    <button type="submit" class="btn btn-primary">Commencer un jeu</button>
+    </form>
+</main>
+</body>
+<html>

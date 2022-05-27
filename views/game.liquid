@@ -1,0 +1,55 @@
+<html>
+{% render 'header.liquid' %}
+<link rel="stylesheet" href="/css/game.css">
+</head>
+<body>
+<main>
+<div id="ennemy_div">
+</div>
+<section id="jeu">
+    <div id="board">
+        <div id="ennemy_part">
+            <div id="ennemy_deck"><</div>
+            <div id="ennemy_monsters">
+                <div id="ennemy_monster1" class="monsters"><img src="/imgs/carte_vide.png" /></div>
+                <div id="ennemy_monster2" class="monsters"><img src="/imgs/carte_vide.png" /></div>
+                <div id="ennemy_monster3" class="monsters"><img src="/imgs/carte_vide.png" /></div>
+            </div>
+            <div id="ennemy_defausse">
+                <img id="ennemy_top_defausse" src="/imgs/carte_vide.png" />
+            </div>
+        </div>
+        <div id="action_part">
+            <div id="action1" class="action_stack"><img src="/imgs/carte_vide.png" /></div>
+            <div id="action2" class="action_stack"><img src="/imgs/carte_vide.png" /></div>
+        </div>
+        <div id="my_part">
+            <div id="my_deck">
+                <div id="deck"><img id="prochaine" src="/imgs/carte_vide.png" /></div>
+            </div>
+            <div id="my_monsters">
+                <div id="monster1" class="monsters" data-bs-toggle="tooltip" data-bs-placement="top" title="Tooltip on top"><img src="/imgs/carte_vide.png" /></div>
+                <div id="monster2" class="monsters" data-bs-toggle="tooltip" data-bs-placement="top" title="Tooltip on top"><img src="/imgs/carte_vide.png" /></div>
+                <div id="monster3" class="monsters" data-bs-toggle="tooltip" data-bs-placement="top" title="Tooltip on top"><img src="/imgs/carte_vide.png" /></div>
+            </div>
+            <div id="my_defausse">
+                <img id="my_top_defausse" src="/imgs/carte_vide.png" />
+            </div>
+        </div>
+    </div>
+    <img id="skip_button" onclick="Skip()" src="/imgs/skip.png" />
+</section>
+<div id="card_div">
+</div>
+<img onclick="ToggleDay()" id="toggle" src="/imgs/corde.png" />
+</main>
+<script>var roomName = "{{ room }}"</script>
+<script src="/js/jquery-3.6.0.min.js"></script>
+<script src="/js/howler.min.js"></script>
+<script src="/js/cartes_effect.js"></script>
+<script src="/js/cartes.js"></script>
+<script src="/js/utils.js"></script>
+<script src="/js/game.js"></script>
+<script src="/js/style.js"></script>
+</body>
+</html>

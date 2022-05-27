@@ -1,0 +1,23 @@
+<html>
+{% render 'header.liquid' %}
+<link rel="stylesheet" href="/css/waitingRoom.css">
+</head>
+<body>
+<main>
+On attend un adversaire !
+Si tu es normalement la deuxième personne, vérifie l'adresse de la partie !
+</main>
+<script src="/js/jquery-3.6.0.min.js"></script>
+<script src="/js/jquery.redirect.js"></script>
+<script>
+    const socket = io();
+    socket.emit("wait", { room :"{{ room }}"});
+    socket.on('both_here', function(arg) {
+        console.log(arg);
+        jQuery(function($){
+            $.redirect("/game", {room: arg}, "POST", "_SELF"); 
+        });
+     });
+</script>
+</body>
+<html>

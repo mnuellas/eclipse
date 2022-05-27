@@ -1,0 +1,195 @@
+
+main {
+    background-image: url(/imgs/plateau/jour.jpg);
+    background-clip: border-box;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
+#ennemy_div {
+    height: 15%;
+    /* background-color: yellowgreen; */
+    top: 0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    width: inherit;
+}
+
+#jeu {
+    height: 70%;
+    display: flex;
+    justify-content: flex-end;
+    /* background-color: aquamarine; */
+}
+
+#board {
+    width: 80%;
+}
+
+#ennemy_part {
+    height: 30%;
+    /* background-color: bisque; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#ennemy_deck {
+    height: 100%;
+    width: 10%;
+    background-color: black;
+}
+
+#ennemy_monsters {
+    height: 100%;
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.monsters img {
+    height: 100%;
+}
+#deck img {
+    height: 100%;
+}
+
+#ennemy_defausse {
+    height: 100%;
+    /* background-color: black; */
+    width: 10%;
+}
+
+#ennemy_defausse img {
+    height: 100%;
+}
+
+#action_part {
+    height: 30%;
+    /* background-color: crimson; */
+    display: flex;
+    justify-content: center;
+}
+
+#my_part {
+    height: 33%;
+    /* background-color: chartreuse; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#my_deck {
+    height: 100%;
+    width: 10%;
+    /* background-color: black; */
+}
+
+#my_monsters {
+    height: 100%;
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.monsters {
+    height: 80%;
+    max-width: 15%;
+    margin: 5px;
+}
+
+.monsters img {
+    height: 100%;
+}
+
+#my_defausse {
+    height: 100%;
+    /* background-color: black; */
+    width: 10%;
+}
+
+#my_defausse img {
+    height: 100%;
+}
+
+#toggle {
+    position: absolute;
+    top: -2em;
+    right: 5em;
+    height: 25em;
+}
+
+#card_div {
+    height: 15%;
+    max-height: 20%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    width: inherit;
+    max-width: 100%;
+}
+
+.cards {
+    margin: 5px;
+    height: 120%;
+    max-width: 10%;
+}
+
+.selectionnable img:hover {
+    border: 8px solid #2bb4b5;
+}
+.selectionnable_div:hover {
+    border: 8px solid #2bb4b5;
+}
+
+.cards img {
+    max-height: 100%;
+    box-shadow: 5px 11px 12px 2px rgb(0 0 0 / 83%);
+    -webkit-box-shadow: 5px 11px 12px 2px rgb(0 0 0 / 83%);
+    -moz-box-shadow: 5px 11px 12px 2px rgba(0,0,0,0.83);
+}
+
+.ennemy_cards {
+    height: 100%;
+    margin: 3px;
+    max-width: 10%;
+}
+
+.ennemy_cards img {
+    max-height: 80%;
+}
+
+#skip_button {
+    height: 7em;
+    align-self: flex-end;
+}
+
+.possible_sacrifiés:hover {
+    border: 8px solid #d98342 !important;
+}
+
+.sacrifiés {
+    border: 8px solid #fd1a1a;
+}
+.sacrifiés:hover {
+    border: 3px solid orange;
+}
+
+.selected {
+    border: 8px solid #2bb4b5 !important;
+}
+
+.action_stack img {
+    height: inherit;
+}
+
+.action_stack {
+    height: 100%;
+}
+
