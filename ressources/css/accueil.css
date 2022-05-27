@@ -1,0 +1,8 @@
+main {
+    text-align: center;
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+} 
